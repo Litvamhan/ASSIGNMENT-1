@@ -13,7 +13,7 @@ int main()
 	printf("Enter Number of columns: ");
 	scanf("%d", &m);
 
-	printf("Enter 2D Array: \n");
+	printf("Enter 2D Array: \n"); 
 	for (i = 0; i < n; ++i) {
 		for (j = 0; j < m; ++j) {
 			scanf("%d", &arr2D[i][j]);
