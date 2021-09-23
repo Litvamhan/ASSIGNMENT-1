@@ -38,8 +38,11 @@ void selectionSort(int arr[], int n)
 // Driver program to test above functions
 int main()
 {
-    int arr[10];
-    int n = sizeof(arr)/sizeof(arr[0]);
+   int n;
+   printf("enter array size");
+   scanf("%d", &n);
+   int arr[n];
+   printf("enter array elements");
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
@@ -51,8 +54,8 @@ int main()
     t2=clock();
     bubbleSort(arr, n);
     t2=clock()-t2;
-    double time_taken_bubblesort = ((double)t1)/CLOCKS_PER_SEC; 
-    double time_taken_selectionsort = ((double)t2)/CLOCKS_PER_SEC; 
+    double time_taken_bubblesort = ((double)t2)/CLOCKS_PER_SEC; 
+    double time_taken_selectionsort = ((double)t1)/CLOCKS_PER_SEC; 
    printf("bubblesort() took %f seconds to execute \n", time_taken_bubblesort);
    printf("selectionsort() took %f seconds to execute \n", time_taken_selectionsort);
     return 0;
