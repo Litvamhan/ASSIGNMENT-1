@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <time.h> 
-void swap(int *xp, int *yp)
+void swap(long long int *xp,long long int *yp)
 {
-    int temp = *xp;
+    long long int temp = *xp;
     *xp = *yp;
     *yp = temp;
 }
  
-void selectionSort(int arr[], int n)
+void selectionSort(long long int arr[],long long int n)
 {
-    int i, j, min_idx;
+    long long  i, j, min_idx;
  
     // One by one move boundary of unsorted subarray
     for (i = 0; i < n-1; i++)
@@ -24,9 +24,9 @@ void selectionSort(int arr[], int n)
         swap(&arr[min_idx], &arr[i]);
     }
 }
- void bubbleSort(int arr[], int n)
+ void bubbleSort(long long int arr[], long long int n)
 {
-   int i, j;
+  long long int i, j;
    for (i = 0; i < n-1; i++)      
   
        // Last i elements are already in place   
@@ -38,13 +38,13 @@ void selectionSort(int arr[], int n)
 // Driver program to test above functions
 int main()
 {
-   int n;
+  long long int n;
    printf("enter array size");
-   scanf("%d", &n);
-   int arr[n];
+   scanf("%lld", &n);
+   long long int arr[n];
    printf("enter array elements");
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+    for (long long int i = 0; i < n; i++) {
+        scanf("%lld", &arr[i]);
     }
     clock_t t1;
     t1=clock();
